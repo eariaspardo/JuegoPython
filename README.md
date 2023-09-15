@@ -2,7 +2,7 @@
 
 Ejecución
 =============
-Para la ejecución del juego basta con ir al archivo <s> main_menu.py</s>  y ejecutarlo
+Para la ejecución del juego basta con ir al archivo **main_menu.py**  y ejecutarlo
 
 ### Menu
 En la ejecución encontrarás 3 opciones, juego de rescate, juego de eliminar naves y salir
