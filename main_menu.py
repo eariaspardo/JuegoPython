@@ -20,7 +20,7 @@ font = pygame.font.Font(None, 36)
 PANTALLA.fill(NEGRO)
 
 # Opciones del menú
-menu_options = ["Jugar Eliminar Naves", "Jugar Rescatar Astronautas", "Salir"]
+menu_options = ["Jugar Rescatar Astronautas", "Jugar Eliminar Naves", "Salir"]
 
 # Función para mostrar el menú
 def show_menu():
