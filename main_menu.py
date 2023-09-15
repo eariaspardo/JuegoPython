@@ -3,13 +3,12 @@ import sys
 from Rescate import start_rescatar_astronauta
 from EliminarNave import start_eliminar_nave
 
-# Inicializar Pygame
 pygame.init()
 
 # Configuración de la pantalla
-width, height = 800, 600
-PANTALLA = pygame.display.set_mode((width, height))
-pygame.display.set_caption("Menú Interactivo en Pygame")
+ancho, alto = 800, 600
+PANTALLA = pygame.display.set_mode((ancho, alto))
+pygame.display.set_caption("Menú")
 
 # Colores
 BLANCO = (255, 255, 255)
@@ -34,13 +33,13 @@ def show_menu():
                 mouse_pos = pygame.mouse.get_pos()
                 for i in range(len(menu_options)):
                     text = font.render(menu_options[i], True, BLANCO)
-                    text_rect = text.get_rect(center=(width // 2, height // 2 - len(menu_options) * text.get_height() // 2 + i * 50))
+                    text_rect = text.get_rect(center=(ancho // 2, alto // 2 - len(menu_options) * text.get_height() // 2 + i * 50))
                     if text_rect.collidepoint(mouse_pos):
-                        if i == 0:
+                        if i == 0: # Juego Astronauta
                             start_rescatar_astronauta()
-                        elif i == 1:
+                        elif i == 1: # Juego Ovnis
                             start_eliminar_nave()
-                        elif i == 2:  # Salir
+                        elif i == 2:
                             pygame.quit()
                             sys.exit()
 
@@ -48,11 +47,11 @@ def show_menu():
 
         # Dibuja las opciones del menú
         for i in range(len(menu_options)):
-            text = font.render(menu_options[i], True, (255, 255, 255))
-            y_position = height // 2 - len(menu_options) * text.get_height() // 2 + i * 50
-            PANTALLA.blit(text, (width // 2 - text.get_width() // 2, y_position))
+            text = font.render(menu_options[i], True, BLANCO)
+            posicion_y = alto // 2 - len(menu_options) * text.get_height() // 2 + i * 50
+            PANTALLA.blit(text, (ancho // 2 - text.get_width() // 2, posicion_y))
 
         pygame.display.update()
 
-# Bucle principal del menú
+# Mantener el Juego en Ejecucion
 show_menu()
