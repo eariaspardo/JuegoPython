@@ -1,8 +1,7 @@
 # Juego en Python
-
 Ejecución
 =============
-Para la ejecución del juego basta con ir al archivo **main_menu.py**  y ejecutarlo
+Para la ejecución del juego basta con ir al archivo **main_menu.py**  y ejecutarlo, debemos instalar la libreria PYGame con el comando "pip install pygame"
 
 ### Menu
 En la ejecución encontrarás 3 opciones, juego de rescate, juego de eliminar naves y salir
