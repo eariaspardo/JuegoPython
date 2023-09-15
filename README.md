@@ -5,7 +5,7 @@ Ejecución
 Para la ejecución del juego basta con ir al archivo main_menu.py y ejecutarlo
 
 ### Menu
-En la ejecucion encontraa 3 opcion, juego de rescaste, juego de eliminar naves y salir
+En la ejecución encontrarás 3 opciones, juego de rescate, juego de eliminar naves y salir
 
 ##### Jugar Eliminar Naves
 Con las fechas laterales moverás a tu nave y con la barra espacio podrás disparas, el fin del juego es sumar el mayor puntaje eliminando los ovnis que verás pasando
